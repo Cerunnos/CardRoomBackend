@@ -1,4 +1,6 @@
 <h1>Action Cable Example</h1>
 <div id="messages">
-  <%= @messages %>
+  <% @messages.each do |m| %>
+  <li><%= m.content%></li>
+  <%end%>
 </div>
